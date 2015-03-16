@@ -1,5 +1,5 @@
 /10001st prime
 N:10001;
-last{N>count x}{n:2+last x;while[any 0=n mod x where x<=sqrt n;n+:2];x,n}/2 3
+last{N>count x}{x,{any 0=x mod y where y<=sqrt x}[;x]{x+2}/2+last x}/2 3
 \
 104743
